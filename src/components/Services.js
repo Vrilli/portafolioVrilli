@@ -48,7 +48,6 @@ const Services = () => {
               aplicación web, así como de garantizar su funcionalidad y
               eficiencia.
             </h3>
-            <button className="btn btn-sm">Ver mi trabajo!</button>
           </motion.div>
 
           {/* servicio */}

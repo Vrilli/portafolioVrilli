@@ -26,7 +26,9 @@ const Work = () => {
                 Consiste en una serie de proyectos personales realizados con la
                 intencìon de adquirir conocimientos.
               </p>
-              <button className="btn btn-sm">Ver el proyecto</button>
+              <a href="https://github.com/Vrilli?tab=repositories">
+                <button className="btn btn-sm">Ver el proyecto</button>
+              </a>
             </div>
 
             {/* imagenes */}

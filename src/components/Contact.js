@@ -1,8 +1,57 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { useState } from "react";
 
-const Contact = () => {
+function Contact() {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [error, setError] = useState(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    fetch("https://formsubmit.co/vrillyjcr@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        phone: phone,
+        email: email,
+        text: subject,
+        comments: message,
+        _subject: "¡Nuevo envío!",
+      }),
+    })
+      .then((response) => {
+        console.log(response);
+        setIsLoading(false);
+        setIsSent(true);
+        setName("");
+        setPhone("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+        resetForm();
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        setError(error);
+      });
+    const resetForm = () => {
+      setName("");
+      setEmail("");
+      setMessage("");
+    };
+  };
+
   return (
     <section className="py-16 lg:section" id="contact">
       <div className="container mx-auto">
@@ -26,37 +75,50 @@ const Contact = () => {
               </h2>
             </div>
           </motion.div>
-
           <motion.form
-            variants={fadeIn("left", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
             className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+            action="https://formsubmit.co/vrillyjcr@gmail.com"
+            method="POST"
+            onSubmit={handleSubmit}
           >
             <input
               className="bg-transparent border-b py-3 outline-none w-full
             placeholder:text-white focus:border-accent transition-all"
               placeholder="Dejame tu nombre!"
               type="text"
+              required
             />
             <input
               className="bg-transparent border-b py-3 outline-none w-full
             placeholder:text-white focus:border-accent transition-all"
               placeholder="Dejame tu correo!"
-              type="text"
+              type="email"
+              required
             />
             <textarea
               className="bg-transparent border-b py-12 outline-none w-full
             placeholder:text-white focus:border-accent transition-all resize-none mb-12"
               placeholder="Dejame un Mensaje!"
             ></textarea>
-            <button className="btn btn-sm">Enviar Mensaje</button>
+
+            {isSent ? (
+              <button className=" text-accent">Mensaje enviado!</button>
+            ) : (
+              <button className="btn btn-sm" disabled={isLoading}>
+                {isLoading ? "Enviando..." : "Enviar mensaje"}{" "}
+              </button>
+            )}
+            {error && (
+              <p className="text-red-500 text-sm mt-2">{error.message}</p>
+            )}
           </motion.form>
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default Contact;

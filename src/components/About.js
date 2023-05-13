@@ -67,12 +67,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg mt-8">Contactame</button>
-              <a href="." className="text-gradient btn-link">
-                Mi Portafolio
-              </a>
-            </div>
           </motion.div>
         </div>
       </div>

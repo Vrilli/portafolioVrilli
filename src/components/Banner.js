@@ -62,8 +62,14 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contactame</button>
-              <a href="." className="text-gradient btn-link">
+              <a
+                href="https://wa.me/3117671177"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn btn-lg">Contactame</button>
+              </a>
+              <a href="https://github.com/Vrilli?tab=repositories" className="text-gradient btn-link">
                 Mi portafolio
               </a>
             </motion.div>

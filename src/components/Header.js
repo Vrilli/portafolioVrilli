@@ -10,11 +10,14 @@ const Header = () => {
             <img className="w-auto h-32" src={Logo} alt="logo" />
           </a>
           <div className="pr-10">
-             <button className="btn btn-sm">
-            Trabaja Conmigo
-          </button>
+            <a
+              href="https://wa.me/3117671177"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-sm">Trabaja Conmigo</button>
+            </a>
           </div>
-         
         </div>
       </div>
     </header>
