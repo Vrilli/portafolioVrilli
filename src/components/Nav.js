@@ -1,5 +1,5 @@
 import React from "react";
-import { BiClipboard, BiHome, BiHomeAlt, BiUser } from "react-icons/bi";
+import {  BiHomeAlt, BiUser } from "react-icons/bi";
 import { BsClipboard2Data, BsBriefcase, BsChatSquare } from "react-icons/bs";
 
 import { Link } from "react-scroll";

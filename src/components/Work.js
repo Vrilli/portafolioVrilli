@@ -4,6 +4,7 @@ import { fadeIn } from "../variants";
 import Portafolio from "../assets/portafolio.jpg";
 import Eccommer from "../assets/eccommer.jpg";
 import Pokemon from "../assets/pokemon.jpg";
+import { Link } from "react-scroll";
 
 const Work = () => {
   return (
@@ -62,7 +63,7 @@ const Work = () => {
           >
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-
+              <Link to="https://portafolio-carlos.vercel.app/"> 
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Portafolio}
@@ -74,11 +75,12 @@ const Work = () => {
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                 <span className="text-3xl text-white">Tìtulo del proyecto</span>
               </div>
+              </Link>
             </div>
 
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-
+              <Link to="https://prueba-t-cnica.vercel.app/login">
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Pokemon}
@@ -90,6 +92,9 @@ const Work = () => {
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                 <span className="text-3xl text-white">Tìtulo del proyecto</span>
               </div>
+               </Link>
+
+             
             </div>
           </motion.div>
         </div>
