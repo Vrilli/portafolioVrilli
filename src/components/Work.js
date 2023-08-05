@@ -33,25 +33,27 @@ const Work = () => {
             </div>
 
             {/* imagenes */}
-            <div className="flex-1 flex flex-col gap-y-10">
-              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-                {/* img */}
-                <img
-                  className="group-hover:scale-125 transition-all duration-500"
-                  src={Eccommer}
-                  alt="eccommer"
-                />
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-gradient">Eccommer</span>
+            <a href="https://arma-tu-vaca.vercel.app/">
+              <div className="flex-1 flex flex-col gap-y-10">
+                <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
+                  <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                  {/* img */}
+                  <img
+                    className="group-hover:scale-125 transition-all duration-500"
+                    src={Eccommer}
+                    alt="eccommer"
+                  />
+                  <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                    <span className="text-gradient">Eccommer</span>
+                  </div>
+                  <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                    <span className="text-3xl text-white">
+                      Tìtulo del proyecto
+                    </span>
+                  </div>
                 </div>
-                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className="text-3xl text-white">
-                    Tìtulo del proyecto
-                  </span>
-                </div>
-              </div>
-            </div>
+              </div>{" "}
+            </a>
           </motion.div>
 
           <motion.div
@@ -61,41 +63,44 @@ const Work = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex flex-col gap-y-10"
           >
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-              <Link to="https://portafolio-carlos.vercel.app/"> 
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Portafolio}
-                alt="portafolio"
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">Portafolio </span>
-              </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Tìtulo del proyecto</span>
-              </div>
-              </Link>
-            </div>
+            <a href="https://portafolio-carlos.vercel.app/">
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
 
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-              <Link to="https://prueba-t-cnica.vercel.app/login">
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Pokemon}
-                alt="pokemon"
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">Pokemon</span>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Portafolio}
+                  alt="portafolio"
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-gradient">Portafolio </span>
+                </div>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white">
+                    Tìtulo del proyecto
+                  </span>
+                </div>
               </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Tìtulo del proyecto</span>
-              </div>
-               </Link>
+            </a>
+            <a href="https://prueba-t-cnica.vercel.app/login">
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
 
-             
-            </div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Pokemon}
+                  alt="pokemon"
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-gradient">Pokemon</span>
+                </div>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white">
+                    Tìtulo del proyecto
+                  </span>
+                </div>
+              </div>{" "}
+            </a>
           </motion.div>
         </div>
       </div>
