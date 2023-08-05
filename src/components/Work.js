@@ -82,7 +82,7 @@ const Work = () => {
                 </div>
               </div>
             </a>
-            <a href="https://prueba-t-cnica.vercel.app/login">
+            <a href="https://nttdata.vercel.app/">
               <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
 
