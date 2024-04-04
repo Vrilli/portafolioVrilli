@@ -4,7 +4,7 @@ import { fadeIn } from "../variants";
 import Portafolio from "../assets/portafolio.jpg";
 import Eccommer from "../assets/eccommer.jpg";
 import Pokemon from "../assets/pokemon.jpg";
-import { Link } from "react-scroll";
+
 
 const Work = () => {
   return (

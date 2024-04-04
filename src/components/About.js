@@ -19,7 +19,7 @@ const About = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="flex aspect-square  bg-about bg-contain bg-no-repeat h-[580px]
-           mix-blend-lighten mt-32 lg:mt-[500px]"
+           mix-blend-lighten -mt-28 lg:mt-[500px]"
           ></motion.div>
 
           {/* texto */}
