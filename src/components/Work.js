@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Portafolio from "../assets/portafolio.jpg";
-import Eccommer from "../assets/eccommer.jpg";
-import Pokemon from "../assets/pokemon.jpg";
+import IMC from "../assets/calculadoraImc.png";
+import Landing from "../assets/landing.png";
+import Appclima from "../assets/AppClima.png";
 
 
 const Work = () => {
@@ -33,18 +33,18 @@ const Work = () => {
             </div>
 
             {/* imagenes */}
-            <a href="https://arma-tu-vaca.vercel.app/">
+            <a href="https://eafit-reto-9olg.vercel.app/login">
               <div className="flex-1 flex flex-col gap-y-10">
                 <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
                   <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                   {/* img */}
                   <img
                     className="group-hover:scale-125 transition-all duration-500"
-                    src={Eccommer}
+                    src={Landing}
                     alt="eccommer"
                   />
                   <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                    <span className="text-gradient">Eccommer</span>
+                    <span className="text-gradient">Landing</span>
                   </div>
                   <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                     <span className="text-3xl text-white">
@@ -63,17 +63,17 @@ const Work = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex flex-col gap-y-10"
           >
-            <a href="https://portafolio-carlos.vercel.app/">
+            <a href="https://dashboard-psi-pink-32.vercel.app/">
               <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
 
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
-                  src={Portafolio}
-                  alt="portafolio"
+                  src={Appclima}
+                  alt="clima"
                 />
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-gradient">Portafolio </span>
+                  <span className="text-gradient">Aplicacion para consultar el Clima</span>
                 </div>
                 <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                   <span className="text-3xl text-white">
@@ -82,17 +82,17 @@ const Work = () => {
                 </div>
               </div>
             </a>
-            <a href="https://nttdata.vercel.app/">
+            <a href="https://imc-eight-eta.vercel.app/">
               <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
 
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
-                  src={Pokemon}
+                  src={IMC}
                   alt="pokemon"
                 />
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-gradient">Pokemon</span>
+                  <span className="text-gradient">Calculadora IMC</span>
                 </div>
                 <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                   <span className="text-3xl text-white">

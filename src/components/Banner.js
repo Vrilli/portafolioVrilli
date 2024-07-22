@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/avatar.png";
+import Image from "../assets//avatar.jpeg";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -44,16 +44,13 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Desarrollador Front End React con competencias para la creación
-              desarrollo y modificación de sitios y la construcción de
-              aplicaciones web basadas en React, Typescript, Tailwind CSS, y
-              sistemas de control de versiones con Git, Desde las cuales, genero
-              soluciones digitales que permiten una interacción agradable al
-              usuario final. Ademas cuento con conocimientos sólidos en
-              tecnologías web como JavaScript, HTML y CSS, Git, Github y
-              Metodología Scrum, conocimientos básicos en Python. Soy reconocida
-              por la pasión y el empeño que pongo en cada proyecto y las ganas
-              de siempre, culminar lo que empiezo
+              Soy una desarrolladora Frontend especializada en React con más de tres años de
+              experiencia en la creación, desarrollo y modificación de sitios web, así como en la
+              construcción de aplicaciones web robustas y escalables. Mi experiencia abarca desde la
+              utilización de tecnologías modernas como JavaScript, React, HTML, CSS, Angular,
+              Typescript y Tailwind CSS, hasta el manejo eficiente de sistemas de control de versiones
+              con Git. Me dedico a generar soluciones digitales que proporcionan una interacción
+              agradable y fluida para el usuario final.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -86,9 +83,6 @@ const Banner = () => {
               <a href="https://www.linkedin.com/in/vrilli-castro-rodriguez-37584822a/">
                 <FaLinkedin />
               </a>
-              <a href="https://twitter.com/VRILLYCASTRO1?t=56kZeK5lpDMfSa-PYBGvGw&s=09">
-                <FaTwitter />
-              </a>
             </motion.div>
           </div>
           <motion.div
@@ -97,7 +91,7 @@ const Banner = () => {
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
           >
-            <img src={Image} alt="imagen" />
+          <img className="rounded-full scale-75" src={Image} alt="imagen" />
           </motion.div>
         </div>
       </div>

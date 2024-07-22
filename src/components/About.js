@@ -32,7 +32,7 @@ const About = () => {
           >
             <h2 className="h2 text-accent">Sobre mí</h2>
             <h3 h3 mb-4>
-              Soy una Front-end Developer con dos años y 8 meses de experiencia.
+              Soy una Front-end Developer con tres años y 10 meses de experiencia.
             </h3>
             <p className="mb-6">
               Una persona proactiva que le encantan los retos, responsable y
@@ -46,7 +46,7 @@ const About = () => {
                   className="text-[40px] font-tertiary text-gradient
                 mb-3"
                 >
-                  {inView ? <CountUp start={0} end={2} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={3} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Años<br />
@@ -59,7 +59,7 @@ const About = () => {
                   className="text-[40px] font-tertiary text-gradient
                 mb-3"
                 >
-                  {inView ? <CountUp start={0} end={8} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={10} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                  y  meses de<br />
